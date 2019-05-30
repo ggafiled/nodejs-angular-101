@@ -24,7 +24,7 @@ router.post('/', (req, res) => {
     console.log(util.format('req val : %s , %d', req.body.name, req.body.age));
     var user = new DataModel({
         name: req.body.name,
-        count: req.body.age,
+        count: req.body.count,
         detail:req.body.detail,
         url:req.body.url
     });
